@@ -15,7 +15,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/SSPRI/vpc_terraform.git'
+                git branch: 'feature', url: 'https://github.com/SSPRI/vpc_terraform.git'
             }
         }
         stage('Terraform init') {
